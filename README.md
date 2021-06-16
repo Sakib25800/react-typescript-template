@@ -154,8 +154,9 @@ function getUserData(firstName, lastName) {
 ```
 Notice:
 1. Both props and state have their own interface
-2. React function is not exported by default
-3. The one time utility function is kept within the component using it  
+2. The react component does not have an interface as it will be inferred
+3. React function is not exported by default
+4. The one time utility function is kept within the component using it  
 ### Creating context
 ```javascript
 import * as React from 'react';
