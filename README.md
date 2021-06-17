@@ -11,75 +11,75 @@ This is a template project for a React-Typescript based project with eslint and 
 <br /> 
 ┣ 📦src
 <br /> 
-  ┣ 📂pages
-  <br /> 
-  ┃ ┣ 📜index.ts
-  <br />
-  ┃ ┗ 📜HomePage.ts
-  <br /> 
-  ┣ 📂components
-  <br />
-  ┃ ┣ 📂common
-  <br />
-  ┃ ┃ ┣ 📜button.ts
-  <br />
-  ┃ ┃ ┗ 📜index.ts
-  <br />
-  ┃ ┃ ┗ 📂Navbar
-  <br />
-  ┃ ┃ ┃ ┣📜List.ts
-  <br />
-  ┃ ┃ ┃ ┣📜Items.ts
-  <br />
-  ┃ ┃ ┃ ┗📜index.ts
-  <br />
-  ┃ ┗ 📜index.ts
-  <br />
-  ┣ 📂layouts
-  <br />
-  ┃ ┣ 📜index.ts
-  <br />
-  ┃ ┗ 📜DashboardLayout.ts
-  <br />
-  ┃ ┗📂interfaces
-  <br />
-  ┃  ┃ ┗📜user.ts
-  <br />
-  ┣ 📂fixtures
-  <br />
-  ┃ ┗ 📜data.json
-  <br />
-  ┣ 📂lib
-  <br />
-  ┃ ┗ 📜users.ts
-  <br />
-  ┣ 📂hooks
-  <br />
-  ┣ ┗📜useForm.ts
-  <br />
-  ┣ 📂context
-  <br />
-  ┣ ┗📜AuthContext.ts
-  <br />
-  ┣ 📂utils
-  <br />
-  ┣ ┣📜sortNums.ts
-  <br />
-  ┣ ┗📜index.ts
-  <br />
-  ┣ 📂styles
-  <br />
-  ┣ ┗📜global.css
-  <br />
-  ┣ 📜App.tsx
-  <br />
-  ┣ 📜index.tsx
-  <br />
-  ┣ 📜react-app-env.d.ts
-  <br />
- ┣ 📜tsconfig.json
- <br />
- ┣ 📜.gitignore
+┃  ┣ 📂pages
+┃  <br /> 
+┃  ┃ ┣ 📜index.ts
+┃  <br />
+┃  ┃ ┗ 📜HomePage.ts
+┃  <br /> 
+┃  ┣ 📂components
+┃  <br />
+┃  ┃ ┣ 📂common
+┃  <br />
+┃ ┃ ┃ ┣ 📜button.ts
+┃  <br />
+┃  ┃ ┃ ┗ 📜index.ts
+┃  <br />
+┃  ┃ ┃ ┗ 📂Navbar
+┃  <br />
+┃  ┃ ┃ ┃ ┣📜List.ts
+┃  <br />
+┃  ┃ ┃ ┃ ┣📜Items.ts
+┃  <br />
+┃  ┃ ┃ ┃ ┗📜index.ts
+┃  <br />
+┃  ┃ ┗ 📜index.ts
+┃  <br />
+┃  ┣ 📂layouts
+┃  <br />
+┃ ┣ 📜index.ts
+┃  <br />
+┃  ┃ ┗ 📜DashboardLayout.ts
+┃  <br />
+┃  ┃ ┗📂interfaces
+┃  <br />
+┃  ┃  ┃ ┗📜user.ts
+┃  <br />
+┃  ┣ 📂fixtures
+┃  <br />
+┃  ┃ ┗ 📜data.json
+┃  <br />
+┃  ┣ 📂lib
+┃  <br />
+┃  ┃ ┗ 📜users.ts
+┃  <br />
+┃  ┣ 📂hooks
+┃  <br />
+┃  ┣ ┗📜useForm.ts
+┃  <br />
+┃  ┣ 📂context
+┃  <br />
+┃  ┣ ┗📜AuthContext.ts
+┃  <br />
+┃  ┣ 📂utils
+┃  <br />
+┃  ┣ ┣📜sortNums.ts
+┃  <br />
+┃  ┣ ┗📜index.ts
+┃  <br />
+┃  ┣ 📂styles
+┃  <br />
+┃  ┣ ┗📜global.css
+┃  <br />
+┃  ┣ 📜App.tsx
+┃  <br />
+┃  ┣ 📜index.tsx
+┃  <br />
+┃  ┣ 📜react-app-env.d.ts
+┃  <br />
+┃ ┣ 📜tsconfig.json
+┃ <br />
+┃ ┣ 📜.gitignore
  <br />
  ┣ 📜.prettierignore
  <br />
