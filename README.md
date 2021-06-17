@@ -1,12 +1,12 @@
 # react-typescript-template
 This is a template project for a React-Typescript based project with eslint and prettier. 
 
-### Features
+# Features
 * Linting with [eslint](https://eslint.org/)
 * Code formatting with [prettier](https://prettier.io/)
 * Testing with [jest](https://jestjs.io/) 
 * Package management with [npm](https://www.npmjs.com/)
-## Template structure 
+# Template structure 
 📦react-typescript-template
 <br /> 
 ┣ 📦src
@@ -122,7 +122,7 @@ Contains all useContext.
 Contains useful functions used by many components.
 ### Styles
 Contains css files.
-## React 
+# React 
 ### Creating components
 ```javascript
 import * as React from 'react';
@@ -177,7 +177,29 @@ export function AuthProvider({children}: Props) {
   )
 }
 
-export const useRoom = () => React.useContext(AuthContext)
+export const useContext = () => React.useContext(AuthContext)
+```
+# Snippets
+### Create context 
+```json 
+"Create new context": {
+ "prefix": "rtctx",
+ "body": [
+		"import * as React from 'react';",
+		"\nexport interface Props {\n\tchildren: React.ReactNode\n}",
+		"\nconst $1Context = React.createContext({});",
+		"\nexport function $1Provider({children}: Props) {",
+		"\tconst [$2, set$3] = React.useState($4);\n",
+		"\treturn (",
+		"\t\t<$1Context.Provider value={{ $2, set$3 }}>",
+		"\t\t\t{children}",
+		"\t\t</$1Context.Provider>",
+		"\t)",
+		"}",
+		"\nexport const use$1 = () => React.useContext($1Context);"
+	],
+  "description": "Creates typescript context hook + provider wrapper"
+}
 ```
 Notice:
 1. A HOC is created to wrap the provider around the children
