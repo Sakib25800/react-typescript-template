@@ -2,112 +2,70 @@
 
 This is a template project for a React-Typescript based project with eslint and prettier.
 
-### Features
-
-- Linting with [eslint](https://eslint.org/)
-- Code formatting with [prettier](https://prettier.io/)
-- Testing with [jest](https://jestjs.io/)
-- Package management with [npm](https://www.npmjs.com/)
-
-## Template structure
-
-📦react-typescript-template
-<br />
-┣ 📦src
-<br />
-┣ 📂pages
-<br />
-┃ ┣ 📜index.ts
-<br />
-┃ ┗ 📜HomePage.ts
-<br />
-┣ 📂components
-<br />
-┃ ┣ 📂common
-<br />
-┃ ┃ ┣ 📜button.ts
-<br />
-┃ ┃ ┗ 📜index.ts
-<br />
-┃ ┃ ┗ 📂Navbar
-<br />
-┃ ┃ ┃ ┣📜List.ts
-<br />
-┃ ┃ ┃ ┣📜Items.ts
-<br />
-┃ ┃ ┃ ┗📜index.ts
-<br />
-┃ ┗ 📜index.ts
-<br />
-┣ 📂layouts
-<br />
-┃ ┣ 📜index.ts
-<br />
-┃ ┗ 📜DashboardLayout.ts
-<br />
-┃ ┗📂interfaces
-<br />
-┃ ┃ ┗📜user.ts
-<br />
-┣ 📂fixtures
-<br />
-┃ ┗ 📜data.json
-<br />
-┣ 📂lib
-<br />
-┃ ┗ 📜users.ts
-<br />
-┣ 📂hooks
-<br />
-┣ ┗📜useForm.ts
-<br />
-┣ 📂context
-<br />
-┣ ┗📜AuthContext.ts
-<br />
-┣ 📂utils
-<br />
-┣ ┣📜sortNums.ts
-<br />
-┣ ┗📜index.ts
-<br />
-┣ 📂styles
-<br />
-┣ ┗📜global.css
-<br />
-┣ 📜App.tsx
-<br />
-┣ 📜index.tsx
-<br />
-┣ 📜react-app-env.d.ts
-<br />
-┣ 📜tsconfig.json
-<br />
-┣ 📜.gitignore
-<br />
-┣ 📜.prettierignore
-<br />
-┣ 📜.prettierrc
-<br />
-┣ 📜.eslintrc
-<br />
-┣ 📜.env
-<br />
-┣ 📜README.md
-<br />
-┣ 📜package.json
-<br />
-┣ 📜package-lock.json
-<br />
-
-### General rules
-
-- If a utility function is a one time function it must be kept in the component file. <br />
-- All folders should contain an index.ts which should export all the relevant files. <br />
-- Do not use `export default` [(reason)](https://basarat.gitbook.io/typescript/main-1/defaultisbad)
-
-### Pages
-
+# Features
+* Linting with [eslint](https://eslint.org/)
+* Code formatting with [prettier](https://prettier.io/)
+* Testing with [jest](https://jestjs.io/) 
+* Package management with [npm](https://www.npmjs.com/)
+# Template structure 
+<pre>
+🌳 react-typescript-template
+├── 📁 public
+|  ├── 📄 favicon.ico
+|  ├── 📄 index.html
+|  ├── 🖼️ logo192.png
+|  ├── 🖼️ logo512.png
+|  ├── 📄 manifest.json
+|  └── 📄 robots.txt
+├── 📦 src
+|  ├── 📄 App.tsx
+|  ├── 📄 index.tsx
+|  ├── 📄 react-app-env.d.ts
+|  ├── 📁 components
+|  |  ├── 📁 common
+|  |  |  ├── 📄 index.ts
+|  |  |  ├── 📄 Logo.tsx
+|  |  ├── 📄 index.ts
+|  |  └── 📄 UserCard.tsx
+|  ├── 📁 context
+|  |  └── 📄 example.tsx
+|  ├── 📁 fixtures
+|  |  └── 📄 data.ts
+|  |  └── 📄 index.ts
+|  ├── 📁 hooks
+|  |  └── 📄 useForm.tsx
+|  |  └── 📄 index.tsx
+|  ├── 📁 interfaces
+|  |  └── 📄 Examples.ts
+|  |  └── 📄 index.ts
+|  ├── 📁 layouts
+|  |  └── 📄 LayoutExample.tsx
+|  |  └── 📄 index.tsx
+|  ├── 📁 lib
+|  |  ├── 📄 index.ts
+|  |  └── 📄 user.ts
+|  ├── 📁 pages
+|  |  ├── 📄 Home.tsx
+|  |  └── 📄 index.ts
+|  ├── 📁 styles
+|  |  └── 📄 global.css
+|  └── 📁 utils
+|     ├── 📄 getUser.ts
+|     └── 📄 index.ts
+├── 📄 .env
+├── 📄 .eslintrc
+├── 📄 package-lock.json
+├── 📄 package.json
+├── 📄 tsconfig.json
+├── 📄 README.md
+└── 📄 tsconfig.json
+</pre>
+### General rules 
+* If a utility function is a one time function it must be kept in the component file. <br />
+* All folders should contain an index.ts which should export all the relevant files. <br />
+* Do not use ```export default``` [(reason)](https://basarat.gitbook.io/typescript/main-1/defaultisbad)
+* All folders should have a index.ts to export all symbols
+###   Pages 
 This folder contains the combination of multiple components and is the actual component displayed on the page, it is also a stateful component.
 
 ### Components
@@ -149,9 +107,7 @@ Contains useful functions used by many components.
 ### Styles
 
 Contains css files.
-
-## React
-
+# React 
 ### Creating components
 
 ```javascript
@@ -211,10 +167,29 @@ export function AuthProvider({ children }: Props) {
   );
 }
 
-export const useRoom = () => React.useContext(AuthContext);
+export const useContext = () => React.useContext(AuthContext)
 ```
-
-Notice:
-
-1. A HOC is created to wrap the provider around the children
-2. A hook is created that is shorthand for useContext for easier use
+# Snippets
+### Create context 
+```json 
+{
+    "Create new context": {
+        "prefix": "rtctx",
+        "body": [
+            "import * as React from 'react';",
+            "\nexport interface Props {\n\tchildren: React.ReactNode\n}",
+            "\nconst $1Context = React.createContext({});",
+            "\nexport function $1Provider({children}: Props) {",
+            "\tconst [$2, set$3] = React.useState($4);\n",
+            "\treturn (",
+            "\t\t<$1Context.Provider value={{ $2, set$3 }}>",
+            "\t\t\t{children}",
+            "\t\t</$1Context.Provider>",
+            "\t)",
+            "}",
+            "\nexport const use$1 = () => React.useContext($1Context);"
+        ],
+        "description": "Creates typescript context hook + provider wrapper"
+    }
+}
+```
